@@ -1,6 +1,5 @@
-package com.esaldivia.listview.repository;
+package com.esaldivia.listview.network;
 
-import com.esaldivia.listview.model.ItemInterface;
 import com.esaldivia.listview.model.LaptopItem;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.esaldivia.listview;
+package com.esaldivia.listview.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -8,10 +8,10 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.esaldivia.listview.R;
 import com.esaldivia.listview.adapters.ItemAdapter;
-import com.esaldivia.listview.model.ItemInterface;
 import com.esaldivia.listview.model.LaptopItem;
-import com.esaldivia.listview.repository.RetrofitClientInstance;
+import com.esaldivia.listview.network.RetrofitClientInstance;
 
 import java.util.List;
 
