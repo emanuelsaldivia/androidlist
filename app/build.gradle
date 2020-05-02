@@ -10,20 +10,18 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        buildConfigField "String", "API_URL", "\"http://private-f0eea-mobilegllatam.apiary-mock.com\""
     }
     buildTypes {
         release {
             minifyEnabled true
             debuggable false
-            buildConfigField "String", "API_URL", "\"http://private-f0eea-mobilegllatam.apiary-mock.com\""
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
         debug {
             minifyEnabled false
             debuggable true
-            buildConfigField "String", "API_URL", "\"http://private-f0eea-mobilegllatam.apiary-mock.com\""
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 }

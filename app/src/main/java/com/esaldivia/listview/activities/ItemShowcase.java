@@ -12,7 +12,6 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.esaldivia.listview.R;
 import com.esaldivia.listview.Util;
-import com.esaldivia.listview.adapters.ItemAdapter;
 import com.esaldivia.listview.model.LaptopItem;
 
 import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
@@ -45,7 +44,7 @@ public class ItemShowcase extends AppCompatActivity {
 
         Glide.with(this)
                 .load(imageUrl)
-                .apply(RequestOptions.placeholderOf(this.getDrawable(R.drawable.ic_broken_image_black_18dp)))
+                .apply(RequestOptions.placeholderOf(this.getDrawable(R.drawable.ic_broken_image)))
                 .into(itemImage);
     }
 }

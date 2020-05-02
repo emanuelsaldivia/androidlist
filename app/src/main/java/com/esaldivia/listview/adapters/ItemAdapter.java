@@ -51,7 +51,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
 
         Glide.with(context)
                 .load(imageUrl)
-                .apply(RequestOptions.placeholderOf(context.getDrawable(R.drawable.ic_broken_image_black_18dp)))
+                .apply(RequestOptions.placeholderOf(context.getDrawable(R.drawable.ic_broken_image)))
                 .into(holder.getCoverImage());
 
         holder.getmView().setOnClickListener(new View.OnClickListener() {

@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         progressDoalog = new ProgressDialog(MainActivity.this);
-        progressDoalog.setMessage("Loading....");
+        progressDoalog.setMessage(getString(R.string.loading));
         progressDoalog.show();
 
         /*Create handle for the RetrofitInstance interface*/
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<List<LaptopItem>> call, Throwable t) {
                 progressDoalog.dismiss();
-                Toast.makeText(MainActivity.this, "Something went wrong...Please try later!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, R.string.error_message, Toast.LENGTH_SHORT).show();
             }
         });
     }
