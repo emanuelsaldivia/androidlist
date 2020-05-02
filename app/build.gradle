@@ -13,7 +13,16 @@ android {
     }
     buildTypes {
         release {
+            minifyEnabled true
+            debuggable false
+            buildConfigField "String", "API_URL", "\"http://private-f0eea-mobilegllatam.apiary-mock.com\""
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
             minifyEnabled false
+            debuggable true
+            buildConfigField "String", "API_URL", "\"http://private-f0eea-mobilegllatam.apiary-mock.com\""
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

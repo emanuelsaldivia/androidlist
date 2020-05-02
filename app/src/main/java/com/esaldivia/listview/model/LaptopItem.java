@@ -2,9 +2,7 @@ package com.esaldivia.listview.model;
 
 import com.google.gson.annotations.SerializedName;
 
-// todo implementar intefaz
-public class LaptopItem {
-//public class LaptopItem implements ItemInterface {
+public class LaptopItem implements ItemInterface {
     @SerializedName("title")
     private String title;
     @SerializedName("description")
